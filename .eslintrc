@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "import/no-extraneous-dependencies": false,
+    "import/no-unresolved": false,
+    "import/extensions": false,
+    "import/prefer-default-export": false,
+    "no-plusplus": 0,
+    "no-param-reassign": 0,
+    "no-var": 0,
+    "prefer-const": 0,
+    "react/jsx-filename-extension": 0,
+    "jsx-a11y/label-has-for": [
+      "error", {
+        "components": [ "label"  ],
+        "required": {
+          "every": [ "id" ]
+        }
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "$": true,
+    "jQuery": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "window": true
+  }
+}
